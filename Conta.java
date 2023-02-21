@@ -1,5 +1,6 @@
 public class Conta {
-	double saldo;
+	//para que o atributo não seja acessado, lido ou atribuido diretamente usamos o private para proibir qualquer ação direta nele
+	private double saldo;
 	int agencia;
 	int numero;
 	Cliente titular;
@@ -23,5 +24,19 @@ public class Conta {
 	    } else {
 	    return false;
 	    }
-	}	
+	}
+	public double pegaSaldo() {
+		return this.saldo;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
